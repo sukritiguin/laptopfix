@@ -1,0 +1,232 @@
+/* Custom Styles for Hero Section */
+.hero-section {
+    background-image: url('https://via.placeholder.com/1920x700'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .hero-section .btn-primary {
+    background-color: #ff5733;
+    border-color: #ff5733;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Footer Styling */
+  footer a {
+    text-decoration: none;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .hero-section .btn-primary {
+      padding: 8px 25px;
+    }
+  }
+  
+
+/* Service Card Styling */
+.service-card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .service-card .card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .service-card .card-text {
+    font-size: 1rem;
+  }
+  
+  .service-card .btn-outline-primary {
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  .card-body img {
+    max-height: 64px;
+    transition: transform 0.3s;
+  }
+  .card-body img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .carousel-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  .carousel-inner {
+    padding: 20px;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 767px) {
+    .service-card {
+      margin-bottom: 20px;
+    }
+  
+    .carousel-item p {
+      font-size: 1rem;
+    }
+  
+    .btn-success {
+      width: 100%;
+    }
+  }
+  
+  
+  /* Accordion Styling */
+  .accordion-button {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .accordion-body {
+    background-color: #f1f3f5;
+  }
+  
+  /* CTA Button */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 767px) {
+    .service-card h4 {
+      font-size: 1rem;
+    }
+  
+    .service-card p {
+      font-size: 0.875rem;
+    }
+  
+    .accordion-body {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  .footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+    border-top: 3px solid #3b82f6;
+}
+.contact-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    background: #3b82f6;
+    transform: translateY(-3px);
+}
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.hours-badge {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid #3b82f6;
+}

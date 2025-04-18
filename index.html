@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional and fast laptop repair services. We specialize in screen repairs, battery replacements, and data recovery.">
+  <meta name="keywords" content="laptop repair, fast laptop services, screen repair, battery replacement">
+  <meta name="author" content="Your Name">
+  <title>Laptop Repair Shop - Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="stylesheet" href="aboutus.css">
+  <link rel="stylesheet" href="contactus.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LaptopFix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-warning ms-lg-4">Get Your Laptop Repaired</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- <header class="hero-section text-center text-white">
+    <div class="container">
+      <h1 class="display-4">Fast and Reliable Laptop Repair Services</h1>
+      <p>Your trusted partner for quick and quality laptop repairs.</p>
+      <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
+    </div>
+  </header> -->
+
+<!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title fade-in">Our Expert Services</h2>
+                <p class="section-subtitle fade-in">We specialize in laptop repairs and offer top-tier services to get your device running smoothly again. Our certified technicians provide reliable solutions with quality parts and fast turnaround times.</p>
+            </div>
+            
+            <!-- Service Filters -->
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="hardware">Hardware Repairs</button>
+                <button class="filter-btn" data-filter="software">Software Solutions</button>
+                <button class="filter-btn" data-filter="data">Data Services</button>
+                <button class="filter-btn" data-filter="preventive">Preventive Care</button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="row" id="services-container">
+                <!-- Services will be loaded dynamically from JSON -->
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-badges fade-in">
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">Certified Technicians</div>
+                        <small class="text-muted">Apple, Dell, HP Certified</small>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">1-Year Warranty</div>
+                        <small class="text-muted">On all repairs</small>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">4.9/5 Rating</div>
+                        <small class="text-muted">From 200+ reviews</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials Carousel -->
+            <div id="testimonialCarousel" class="carousel slide fade-in" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"TechFix replaced my MacBook Pro screen in just one day. The quality is perfect and the price was very reasonable compared to Apple's quote. Highly recommended!"</p>
+                            <div class="testimonial-author">- Ramesh K., Bangalore</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"My laptop wouldn't boot and I had important files. TechFix recovered all my data and fixed the hardware issue. Professional service with transparent pricing."</p>
+                            <div class="testimonial-author">- Priya M., Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section fade-in">
+                <h3 class="cta-title">Need help with your laptop?</h3>
+                <p class="mb-4">Get a free diagnostic and quote from our experts today.</p>
+                <a href="#contact">
+                    <button class="btn btn-cta" data-bs-toggle="modal"  data-bs-target="">Get a Free Quote</button>
+                </a>
+            </div>
+        </div>
+    </section>
+  
+  
+  
+
+  <!-- About Us Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column - Text Content -->
+            <div class="col-lg-6">
+                <h2 class="section-title slide-up">About TechFix</h2>
+                
+                <div class="mission-text fade-in">
+                    <p>Our mission is to provide fast, affordable, and professional laptop repairs with a focus on customer satisfaction and quality service. Since 2015, we've been helping individuals and businesses in our community stay productive with reliable laptop repair solutions.</p>
+                </div>
+                
+                <div class="values-list">
+                    <div class="value-item slide-up" style="transition-delay: 0.1s;">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4>Trust</h4>
+                            <p>We believe in transparency and honest service. No hidden fees, no unnecessary repairs - just straightforward solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item slide-up" style="transition-delay: 0.2s;">
+                        <div class="value-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4>Efficiency</h4>
+                            <p>Fast and reliable repairs with minimal downtime for our customers. Most repairs completed within 24 hours.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="value-item slide-up" style="transition-delay: 0.3s;">
+                        <div class="value-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="value-content">
+                            <h4>Expertise</h4>
+                            <p>Our technicians are highly skilled and experienced in all laptop brands and models, from hardware to software issues.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-intro fade-in" style="transition-delay: 0.4s;">
+                    <p><strong>Our team of certified technicians</strong> has over 15 years of combined experience in laptop repairs. We continuously train to stay updated with the latest technologies and repair techniques.</p>
+                </div>
+                
+                <div class="certifications fade-in" style="transition-delay: 0.5s;">
+                    <p class="mb-3"><strong>Certifications:</strong></p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <span class="badge bg-primary p-2"><i class="fas fa-certificate me-2"></i>Apple Certified</span>
+                        <span class="badge bg-success p-2"><i class="fas fa-certificate me-2"></i>Microsoft Partner</span>
+                        <span class="badge bg-dark p-2"><i class="fas fa-award me-2"></i>BBB Accredited</span>
+                    </div>
+                </div>
+                
+                <div class="mt-4 fade-in" style="transition-delay: 0.6s;">
+                    <button class="btn cta-button btn-lg">Get Your Laptop Repaired</button>
+                </div>
+            </div>
+            
+            <!-- Right Column - Image -->
+            <div class="col-lg-6">
+                <div class="about-img slide-up" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Technician repairing laptop at TechFix" class="img-fluid">
+                    <!-- <div class="position-absolute bottom-0 start-0 p-3 text-white w-100" style="background: linear-gradient(transparent, rgba(0,0,0,0.7));">
+                        <h5 class="mb-0">Our team at work</h5>
+                        <small>State-of-the-art repair facility</small>
+                    </div> -->
+                </div>
+                
+                <!-- Video alternative (commented out) -->
+                <!--
+                <div class="mt-4 about-img">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/example" title="About TechFix" allowfullscreen></iframe>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Review Section -->
+
+  <section class="py-5 bg-light" id="customer-reviews">
+    <div class="container">
+      <h2 class="text-center mb-5">What Our Customers Say</h2>
+      <div class="row" id="testimonial-container"></div>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Testimonial Section -->
+  <!-- <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Customers Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="text-center">"Great service, my laptop is like new again! Highly recommend."</p>
+            <h5 class="text-center">John Doe</h5>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center">"Quick and affordable repairs. I was impressed with the speed and quality."</p>
+            <h5 class="text-center">Jane Smith</h5>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center">"Best laptop repair service I’ve ever used! My laptop runs like new!"</p>
+            <h5 class="text-center">Mary Johnson</h5>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <!-- <section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Send Message</button>
+      </form>
+      <div class="mt-4 text-center">
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@laptopfix.com</p>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="contact-section py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-3">Contact Our Repair Team</h2>
+          <p class="lead mb-5">Get a free diagnostic estimate today</p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="repair-form" class="custom-form p-4 bg-white rounded shadow">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name*</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            
+            <div class="mb-3">
+              <label for="device" class="form-label">Device Type</label>
+              <select class="form-select" id="device" name="device">
+                <option value="Laptop">Laptop</option>
+                <option value="MacBook">MacBook</option>
+                <option value="PC">Desktop PC</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="issue" class="form-label">Describe the Issue*</label>
+              <textarea class="form-control" id="issue" name="issue" rows="3" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100 py-2">
+              <span class="submit-text">Send Request</span>
+              <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+            </button>
+            
+            <div class="mt-3 text-center">
+              <small class="text-muted">We'll respond within 24 hours</small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Modern Footer Section -->
+<footer class="footer text-white pt-5 pb-4 bg-dark">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Contact Information -->
+            <div class="col-lg-4">
+                <div class="contact-card p-4 h-100">
+                    <h4 class="fw-bold mb-4">
+                        <i class="bi bi-laptop text-primary me-2"></i>TechFix Repairs
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="tel:+919876543210" class="text-white text-decoration-none">
+                                <i class="bi bi-telephone-fill text-primary me-2"></i>+91 98765 43210
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="mailto:contact@techfix.com" class="text-white text-decoration-none">
+                                <i class="bi bi-envelope-fill text-primary me-2"></i>contact@techfix.com
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-geo-alt-fill text-primary mt-1 me-2"></i>
+                            <span>123 Tech Street, Bangalore - 560001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Business Hours -->
+            <div class="col-lg-4">
+                <div class="contact-card p-4 h-100">
+                    <h4 class="fw-bold mb-4">
+                        <i class="bi bi-clock-history text-primary me-2"></i>Working Hours
+                    </h4>
+                    <div class="hours-badge p-3 mb-3">
+                        <p class="mb-1"><strong>Today:</strong> 9:30 AM - 7:30 PM</p>
+                        <p class="mb-0 small">(Open now)</p>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Mon-Fri: 9:30 AM - 7:30 PM</li>
+                        <li class="mb-2">Saturday: 10:00 AM - 5:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Google Maps & Social -->
+            <div class="col-lg-4">
+                <div class="map-container mb-4 ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789012!2d77.12345678901234!3d12.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="social-icon me-3" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp fs-5"></i>
+                    </a>
+                    <a href="#" class="social-icon me-3" aria-label="Instagram">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="small text-muted mb-0">
+                    &copy; 2023 TechFix Laptop Repairs. All rights reserved. | 
+                    <a href="#" class="text-muted text-decoration-none">Privacy Policy</a> | 
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS and Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="reviews.js"></script>
+  <script src="aboutus.js"></script>
+  <script src="services.js"></script>
+</body>
+
+</html>

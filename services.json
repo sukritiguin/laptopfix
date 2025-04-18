@@ -1,0 +1,196 @@
+{
+    "services": [
+      {
+        "id": "screen-repair",
+        "icon": "https://img.icons8.com/fluency/48/pro-display-xdr.png",
+        "title": "Laptop Screen Repair",
+        "description": "Professional screen replacements using OEM-quality parts for all major laptop brands.",
+        "details": "✅ High-quality parts<br>🕐 Time: 1-2 business days<br>💰 Price: ₹2500 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "battery-replacement",
+        "icon": "https://img.icons8.com/3d-fluency/94/medium-battery.png",
+        "title": "Battery Replacement",
+        "description": "Original and compatible battery replacements with full safety and performance checks.",
+        "details": "✅ Genuine batteries<br>🕐 Time: Same day<br>💰 Price: ₹1800 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "software-troubleshooting",
+        "icon": "https://img.icons8.com/fluency/64/computer-support.png",
+        "title": "Software Troubleshooting",
+        "description": "From OS issues to slow performance—we resolve it all with precision and speed.",
+        "details": "✅ Malware removal<br>🕐 Time: 1 day<br>💰 Price: ₹1200 onwards",
+        "category": "software"
+      },
+      {
+        "id": "data-recovery",
+        "icon": "https://img.icons8.com/fluency/48/database.png",
+        "title": "Data Recovery",
+        "description": "Recover deleted or lost data from hard drives, SSDs, USB drives, and more.",
+        "details": "✅ Deep scan recovery<br>🕐 Time: 2-3 days<br>💰 Price: ₹3000 onwards",
+        "category": "data"
+      },
+      {
+        "id": "motherboard-repair",
+        "icon": "https://img.icons8.com/3d-fluency/94/raspberry-pi-zero.png",
+        "title": "Motherboard Repair",
+        "description": "Chip-level motherboard repairs with advanced tools and skilled technicians.",
+        "details": "✅ Soldering & IC replacements<br>🕐 Time: 2-5 days<br>💰 Price: ₹4000 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "keyboard-replacement",
+        "icon": "https://img.icons8.com/3d-fluency/94/keyboard-1.png",
+        "title": "Keyboard Replacement",
+        "description": "Replace broken or unresponsive keys or full keyboards for any laptop brand.",
+        "details": "✅ Backlit & standard keyboards<br>🕐 Time: 1 day<br>💰 Price: ₹1200 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "hinge-repair",
+        "icon": "https://img.icons8.com/3d-fluency/94/laptop.png",
+        "title": "Laptop Hinge Repair",
+        "description": "Fix cracked, stiff or broken hinges for smooth screen movement.",
+        "details": "✅ Frame alignment<br>🕐 Time: 1-2 days<br>💰 Price: ₹1000 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "fan-cleaning",
+        "icon": "https://img.icons8.com/fluency/48/fan.png",
+        "title": "Fan Cleaning & Overheating Fix",
+        "description": "Clean internal fans and replace thermal paste to fix overheating.",
+        "details": "✅ Noise-free cooling<br>🕐 Time: 2-3 hours<br>💰 Price: ₹800 onwards",
+        "category": "preventive"
+      },
+      {
+        "id": "os-installation",
+        "icon": "https://img.icons8.com/color/48/windows-10.png",
+        "title": "OS Installation / Upgrade",
+        "description": "Install or upgrade Windows, Linux, or Mac OS with drivers and updates.",
+        "details": "✅ Licensed installations<br>🕐 Time: Same day<br>💰 Price: ₹1000 onwards",
+        "category": "software"
+      },
+      {
+        "id": "virus-removal",
+        "icon": "https://img.icons8.com/fluency/48/bug.png",
+        "title": "Virus & Malware Removal",
+        "description": "Complete system scanning and virus cleanup for secure computing.",
+        "details": "✅ Anti-virus & firewall setup<br>🕐 Time: 2-4 hours<br>💰 Price: ₹700 onwards",
+        "category": "software"
+      },
+      {
+        "id": "ram-upgrade",
+        "icon": "https://img.icons8.com/plasticine/100/computer-ram.png",
+        "title": "RAM Upgrade",
+        "description": "Upgrade your laptop RAM for faster performance and better multitasking.",
+        "details": "✅ Compatible RAM fitting<br>🕐 Time: 30 mins<br>💰 Price: ₹1500 onwards",
+        "category": "upgrade"
+      },
+      {
+        "id": "ssd-upgrade",
+        "icon": "https://img.icons8.com/fluency/48/ssd.png",
+        "title": "SSD Upgrade",
+        "description": "Switch to SSD for faster boot time and app loading with OS cloning.",
+        "details": "✅ Free OS cloning<br>🕐 Time: Same day<br>💰 Price: ₹2500 onwards",
+        "category": "upgrade"
+      },
+      {
+        "id": "wifi-bluetooth-fix",
+        "icon": "https://img.icons8.com/color/48/wifi.png",
+        "title": "Wi-Fi & Bluetooth Repair",
+        "description": "Fix issues with wireless connectivity, range, or hardware modules.",
+        "details": "✅ Driver reinstallation<br>🕐 Time: 2-3 hours<br>💰 Price: ₹600 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "audio-jack-repair",
+        "icon": "https://img.icons8.com/color/48/audio-cable.png",
+        "title": "Audio Jack Repair",
+        "description": "Fix or replace faulty headphone or mic jacks on laptops.",
+        "details": "✅ Soldering service<br>🕐 Time: 1-2 days<br>💰 Price: ₹900 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "charging-port-repair",
+        "icon": "https://img.icons8.com/color/48/mini-display-port.png",
+        "title": "Charging Port Repair",
+        "description": "Repair or replace damaged or loose charging ports for reliable power.",
+        "details": "✅ SMD repair tools<br>🕐 Time: 1-2 days<br>💰 Price: ₹1000 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "body-replacement",
+        "icon": "https://img.icons8.com/fluency/48/laptop-settings.png",
+        "title": "Laptop Body Replacement",
+        "description": "Fix broken laptop panels, bezels, or full body casing.",
+        "details": "✅ Original plastic panels<br>🕐 Time: 2-4 days<br>💰 Price: ₹2500 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "display-cable-repair",
+        "icon": "https://img.icons8.com/3d-fluency/94/network-cable.png",
+        "title": "Display Cable Repair",
+        "description": "Fix flickering or dead screen due to damaged display cables.",
+        "details": "✅ LVDS cable service<br>🕐 Time: 1 day<br>💰 Price: ₹1200 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "touchpad-repair",
+        "icon": "https://img.icons8.com/color/48/touchpad.png",
+        "title": "Touchpad Repair / Replacement",
+        "description": "Non-responsive or damaged touchpad? Get it fixed quickly.",
+        "details": "✅ Multi-touch support<br>🕐 Time: 1-2 days<br>💰 Price: ₹1100 onwards",
+        "category": "hardware"
+      },
+      {
+        "id": "bios-repair",
+        "icon": "https://img.icons8.com/fluency/48/bios.png",
+        "title": "BIOS Repair / Flash",
+        "description": "Fix corrupted BIOS or upgrade for system compatibility.",
+        "details": "✅ Flash tools supported<br>🕐 Time: Same day<br>💰 Price: ₹1000 onwards",
+        "category": "software"
+      },
+      {
+        "id": "liquid-damage-repair",
+        "icon": "https://img.icons8.com/fluency/48/wet.png",
+        "title": "Liquid Damage Repair",
+        "description": "Complete cleaning and diagnostics for laptops exposed to water or coffee.",
+        "details": "✅ Ultrasonic cleaning<br>🕐 Time: 3-5 days<br>💰 Price: ₹3500 onwards",
+        "category": "emergency"
+      }
+    ],
+    "categories": [
+      {
+        "id": "hardware",
+        "name": "Hardware Repairs",
+        "icon": "fas fa-tools"
+      },
+      {
+        "id": "software",
+        "name": "Software Solutions",
+        "icon": "fas fa-code"
+      },
+      {
+        "id": "data",
+        "name": "Data Services",
+        "icon": "fas fa-database"
+      },
+      {
+        "id": "upgrade",
+        "name": "Performance Upgrades",
+        "icon": "fas fa-tachometer-alt"
+      },
+      {
+        "id": "preventive",
+        "name": "Preventive Care",
+        "icon": "fas fa-shield-alt"
+      },
+      {
+        "id": "emergency",
+        "name": "Emergency Repairs",
+        "icon": "fas fa-ambulance"
+      }
+    ]
+  }

@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Anjali Dutta",
+      "rating": 4.7,
+      "review": "Excellent service, they fixed my screen within hours!",
+      "date": "2024-03-10",
+      "profile_photo": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      "name": "Rohit Sharma",
+      "rating": 5,
+      "review": "Very professional and friendly staff. Highly recommended.",
+      "date": "2024-03-08",
+      "profile_photo": "https://randomuser.me/api/portraits/men/44.jpg"
+    },
+    {
+      "name": "Neha Agarwal",
+      "rating": 4.9,
+      "review": "My laptop was heating badly. Their cooling service helped a lot!",
+      "date": "2024-03-12",
+      "profile_photo": "https://randomuser.me/api/portraits/women/52.jpg"
+    },
+    {
+      "name": "Amit Sinha",
+      "rating": 4.5,
+      "review": "Battery replacement done perfectly within the same day.",
+      "date": "2024-03-18",
+      "profile_photo": "https://randomuser.me/api/portraits/men/21.jpg"
+    },
+    {
+      "name": "Ritika Bose",
+      "rating": 4.6,
+      "review": "Quick diagnosis and honest pricing. Trustworthy team.",
+      "date": "2024-03-20",
+      "profile_photo": "https://randomuser.me/api/portraits/women/72.jpg"
+    },
+    {
+      "name": "Kunal Patel",
+      "rating": 4.3,
+      "review": "Data recovery was successful. I’m so relieved!",
+      "date": "2024-03-22",
+      "profile_photo": "https://randomuser.me/api/portraits/men/67.jpg"
+    }
+  ]
+  

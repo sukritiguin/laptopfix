@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFix - Professional Laptop Repair Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .services-section {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        .section-subtitle {
+            color: #6c757d;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 25px;
+            background-color: white;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 30px auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+        }
+        
+        .service-icon img {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .service-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .service-description {
+            color: #6c757d;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+        
+        .btn-service {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            font-weight: 500;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .btn-service:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        
+        .accordion-button {
+            font-weight: 600;
+            color: var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary-color);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(52, 152, 219, 0.25);
+        }
+        
+        .service-details {
+            padding: 15px;
+            background-color: white;
+        }
+        
+        .service-details p {
+            margin-bottom: 0;
+        }
+        
+        .filter-buttons {
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            border: 1px solid var(--secondary-color);
+            color: var(--secondary-color);
+            background-color: transparent;
+            padding: 5px 15px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 10px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .rating {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+        
+        .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        
+        .badge-item {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .badge-icon {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .cta-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            border-radius: 10px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .btn-cta {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cta:hover {
+            background-color: white;
+            color: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .services-section {
+                padding: 50px 0;
+            }
+            
+            .section-subtitle {
+                margin-bottom: 30px;
+            }
+            
+            .filter-buttons {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title fade-in">Our Expert Services</h2>
+                <p class="section-subtitle fade-in">We specialize in laptop repairs and offer top-tier services to get your device running smoothly again. Our certified technicians provide reliable solutions with quality parts and fast turnaround times.</p>
+            </div>
+            
+            <!-- Service Filters -->
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="hardware">Hardware Repairs</button>
+                <button class="filter-btn" data-filter="software">Software Solutions</button>
+                <button class="filter-btn" data-filter="data">Data Services</button>
+                <button class="filter-btn" data-filter="preventive">Preventive Care</button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="row" id="services-container">
+                <!-- Services will be loaded dynamically from JSON -->
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-badges fade-in">
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">Certified Technicians</div>
+                        <small class="text-muted">Apple, Dell, HP Certified</small>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">1-Year Warranty</div>
+                        <small class="text-muted">On all repairs</small>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div>
+                        <div class="badge-title">4.9/5 Rating</div>
+                        <small class="text-muted">From 200+ reviews</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials Carousel -->
+            <div id="testimonialCarousel" class="carousel slide fade-in" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"TechFix replaced my MacBook Pro screen in just one day. The quality is perfect and the price was very reasonable compared to Apple's quote. Highly recommended!"</p>
+                            <div class="testimonial-author">- Ramesh K., Bangalore</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"My laptop wouldn't boot and I had important files. TechFix recovered all my data and fixed the hardware issue. Professional service with transparent pricing."</p>
+                            <div class="testimonial-author">- Priya M., Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section fade-in">
+                <h3 class="cta-title">Need help with your laptop?</h3>
+                <p class="mb-4">Get a free diagnostic and quote from our experts today.</p>
+                <button class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#contactModal">Get a Free Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Get a Free Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service Needed</label>
+                            <select class="form-select" id="service">
+                                <option value="">Select a service</option>
+                                <option value="screen-repair">Screen Repair</option>
+                                <option value="battery-replacement">Battery Replacement</option>
+                                <option value="data-recovery">Data Recovery</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Describe Your Issue</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Load services from JSON and render them
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample JSON data (in a real scenario, this would be loaded from a file)
+            const servicesData = [
+                {
+                    "id": "screen-repair",
+                    "icon": "https://img.icons8.com/fluency/48/pro-display-xdr.png",
+                    "title": "Laptop Screen Repair",
+                    "description": "Professional screen replacements using OEM-quality parts for all major laptop brands.",
+                    "details": "✅ High-quality parts<br>🕐 Time: 1-2 business days<br>💰 Price: ₹2500 onwards",
+                    "category": "hardware"
+                },
+                {
+                    "id": "battery-replacement",
+                    "icon": "https://img.icons8.com/3d-fluency/94/medium-battery.png",
+                    "title": "Battery Replacement",
+                    "description": "Original and compatible battery replacements with full safety and performance checks.",
+                    "details": "✅ Genuine batteries<br>🕐 Time: Same day<br>💰 Price: ₹1800 onwards",
+                    "category": "hardware"
+                },
+                {
+                    "id": "keyboard-repair",
+                    "icon": "https://img.icons8.com/external-filled-outline-wichaiwi/64/external-keyboard-electronics-filled-outline-wichaiwi.png",
+                    "title": "Keyboard Replacement",
+                    "description": "Fix stuck or non-responsive keys with professional keyboard repair or replacement.",
+                    "details": "✅ OEM keyboards<br>🕐 Time: 1-3 hours<br>💰 Price: ₹1500 onwards",
+                    "category": "hardware"
+                },
+                {
+                    "id": "data-recovery",
+                    "icon": "https://img.icons8.com/external-filled-outline-icons-pause-08/64/external-data-recovery-data-analytics-filled-outline-filled-outline-icons-pause-08.png",
+                    "title": "Data Recovery",
+                    "description": "Recover lost or deleted files from damaged or corrupted hard drives and SSDs.",
+                    "details": "✅ 90% success rate<br>🕐 Time: 1-3 days<br>💰 Price: ₹3000 onwards",
+                    "category": "data"
+                },
+                {
+                    "id": "virus-removal",
+                    "icon": "https://img.icons8.com/external-filled-outline-lima-studio/64/external-virus-cyber-security-filled-outline-lima-studio.png",
+                    "title": "Virus Removal",
+                    "description": "Complete malware and virus removal with system optimization for better performance.",
+                    "details": "✅ Full system scan<br>🕐 Time: 2-4 hours<br>💰 Price: ₹1200 fixed",
+                    "category": "software"
+                },
+                {
+                    "id": "os-installation",
+                    "icon": "https://img.icons8.com/external-filled-outline-chattapat-/64/external-software-computer-filled-outline-filled-outline-chattapat-.png",
+                    "title": "OS Installation",
+                    "description": "Clean installation of Windows, macOS, or Linux with all necessary drivers.",
+                    "details": "✅ Latest OS version<br>🕐 Time: 1-2 hours<br>💰 Price: ₹1000 fixed",
+                    "category": "software"
+                },
+                {
+                    "id": "cleaning-service",
+                    "icon": "https://img.icons8.com/external-filled-outline-berkahicon/64/external-cleaning-office-filled-outline-filled-outline-berkahicon.png",
+                    "title": "Deep Cleaning",
+                    "description": "Internal cleaning to remove dust and prevent overheating issues in laptops.",
+                    "details": "✅ Thermal paste replacement<br>🕐 Time: 1 hour<br>💰 Price: ₹800 fixed",
+                    "category": "preventive"
+                },
+                {
+                    "id": "upgrade-service",
+                    "icon": "https://img.icons8.com/external-filled-outline-icons-pause-08/64/external-upgrade-data-analytics-filled-outline-filled-outline-icons-pause-08.png",
+                    "title": "Hardware Upgrade",
+                    "description": "RAM and SSD upgrades to boost your laptop's performance significantly.",
+                    "details": "✅ Quality components<br>🕐 Time: 1 hour<br>💰 Price: Varies by component",
+                    "category": "hardware"
+                }
+            ];
+
+            // Render services
+            function renderServices(filter = 'all') {
+                const container = document.getElementById('services-container');
+                container.innerHTML = '';
+                
+                servicesData.forEach(service => {
+                    if (filter === 'all' || service.category === filter) {
+                        const serviceHTML = `
+                            <div class="col-md-6 col-lg-4 col-xl-3 fade-in">
+                                <div class="card service-card h-100">
+                                    <div class="card-body text-center">
+                                        <div class="service-icon">
+                                            <img src="${service.icon}" alt="${service.title}">
+                                        </div>
+                                        <h4 class="service-title">${service.title}</h4>
+                                        <p class="service-description">${service.description}</p>
+                                        <button class="btn btn-service" data-bs-toggle="collapse" data-bs-target="#details-${service.id}">Learn More</button>
+                                    </div>
+                                    <div class="collapse" id="details-${service.id}">
+                                        <div class="service-details">
+                                            <p>${service.details}</p>
+                                            <button class="btn btn-outline-primary btn-sm mt-2 w-100" data-bs-toggle="modal" data-bs-target="#contactModal" data-service="${service.title}">
+                                                Get a Quote
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        container.insertAdjacentHTML('beforeend', serviceHTML);
+                    }
+                });
+            }
+
+            // Initial render
+            renderServices();
+
+            // Filter buttons functionality
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    renderServices(this.dataset.filter);
+                });
+            });
+
+            // Animation on scroll functionality
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.fade-in');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // Run once on page load
+            animateOnScroll();
+            
+            // Run on scroll
+            window.addEventListener('scroll', animateOnScroll);
+
+            // Service quote buttons in modal
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('[data-service]')) {
+                    const serviceName = e.target.closest('[data-service]').getAttribute('data-service');
+                    document.getElementById('service').value = serviceName.toLowerCase().includes('screen') ? 'screen-repair' : 
+                                                           serviceName.toLowerCase().includes('battery') ? 'battery-replacement' : 
+                                                           serviceName.toLowerCase().includes('data') ? 'data-recovery' : 'other';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
